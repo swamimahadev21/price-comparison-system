@@ -1,0 +1,53 @@
+<!-- price-comparison/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Price<span>Compare</span></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Compare Prices and Save Money</h2>
+            <p>Find the best deals across multiple online stores!</p>
+        </section>
+
+        <section class="filters">
+            <div class="filter-options">
+                <label>Sort by:</label>
+                <select id="sort-by">
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                    <option value="discount">Discount %</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="comparison-container">
+            <h2>Product Comparison</h2>
+            <div id="comparison-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PriceCompare. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/comparison.js"></script>
+</body>
+</html>
