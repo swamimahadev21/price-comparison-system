@@ -104,7 +104,7 @@ function displayProducts() {
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <div class="rating">${product.rating} ★</div>
-            <div class="price">₹${product.price.toFixed(2)} 
+            <div class="price">$${product.price.toFixed(2)} 
                 <span style="text-decoration: line-through; color: #666; font-size: 0.8rem;">₹${product.originalPrice.toFixed(2)}</span>
                 <span style="color: #388e3c; font-size: 0.8rem;">${discount}% off</span>
             </div>
