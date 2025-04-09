@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Price Analyzer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body class="bg-gradient-to-br from-purple-50 to-blue-100 min-h-screen p-6">
 
   <!-- Header -->
-  <header class="flex flex-col items-center text-center mb-10">
+  <header class="text-center mb-10">
     <h1 class="text-4xl font-bold text-purple-700">🔍 Smart Price Analyzer</h1>
     <p class="text-gray-600 mt-2">Compare prices from Amazon & Flipkart and get the best deal!</p>
   </header>
 
-  <!-- Search Bar -->
-  <div class="flex flex-col items-center w-full max-w-xl mx-auto mb-8">
-    <div class="flex w-full">
+  <!-- Search and Filters -->
+  <div class="w-full max-w-2xl mx-auto">
+    <div class="flex">
       <input
         type="text"
         id="search-input"
-        placeholder="Search for products..."
+        placeholder="Enter product name..."
         class="flex-1 p-4 rounded-l-xl border-2 border-purple-300 focus:outline-none focus:border-purple-500"
       />
       <button id="search-btn" class="bg-purple-600 text-white px-6 rounded-r-xl hover:bg-purple-700 transition duration-300">
@@ -29,8 +29,7 @@
       </button>
     </div>
 
-    <!-- Sort Filters -->
-    <div class="mt-4 w-full">
+    <div class="mt-4">
       <label for="sort-by" class="block text-sm font-medium text-gray-700 mb-1">Sort by:</label>
       <select id="sort-by" class="w-full p-3 border border-purple-300 rounded-xl focus:outline-none focus:border-purple-500">
         <option value="price-low">Price: Low to High</option>
@@ -41,17 +40,26 @@
     </div>
   </div>
 
-  <!-- Comparison Section -->
-  <section class="w-full max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Product Comparison</h2>
-    <div id="comparison-results" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+  <!-- Comparison Results -->
+  <section class="w-full max-w-6xl mx-auto mt-10">
+    <h2 class="text-2xl font-bold text-gray-700 text-center mb-6">Product Comparison</h2>
+    <div id="comparison-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Cards will be injected here by JS -->
+    </div>
   </section>
+
+  <!-- Best Deal -->
+  <div class="bg-green-100 border border-green-300 rounded-2xl p-6 mt-12 max-w-xl w-full mx-auto text-center shadow">
+    <h3 class="text-xl font-semibold text-green-800">💡 Best Deal</h3>
+    <p class="text-lg text-gray-700 mt-2" id="best-deal-msg">Our suggestion will appear here after analysis.</p>
+  </div>
 
   <!-- Footer -->
   <footer class="mt-16 text-center text-gray-500">
     <p>&copy; 2025 PriceCompare. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/main.js"></script>
   <script src="js/comparison.js"></script>
 </body>
