@@ -36,7 +36,7 @@ function getMockData() {
             originalPrice: 899.99,
             rating: 4.5,
             isPrime: true,
-            image: "../amazon-clone/images/products/product1.jpg",
+            image: "../price-comparison/images/products/product1.jpg",
             specs: {
                 display: "6.5-inch AMOLED",
                 processor: "Octa-core 2.5GHz",
@@ -54,7 +54,7 @@ function getMockData() {
             originalPrice: 1499.99,
             rating: 4.7,
             isPrime: true,
-            image: "../amazon-clone/images/products/product2.jpg",
+            image: "../price-comparisonimages/products/product2.jpg",
             specs: {
                 display: "15.6-inch FHD IPS",
                 processor: "Intel Core i7-11th Gen",
@@ -72,7 +72,7 @@ function getMockData() {
             originalPrice: 249.99,
             rating: 4.3,
             isPrime: true,
-            image: "../amazon-clone/images/products/product3.jpg",
+            image: "../price-comparison/images/products/product3.jpg",
             specs: {
                 type: "Over-ear",
                 connectivity: "Bluetooth 5.0",
@@ -90,7 +90,7 @@ function getMockData() {
             originalPrice: 349.99,
             rating: 4.6,
             isPrime: false,
-            image: "../amazon-clone/images/products/product4.jpg",
+            image: "../price-comparison/images/products/product4.jpg",
             specs: {
                 display: "1.4-inch AMOLED",
                 battery: "14 days",
@@ -108,7 +108,7 @@ function getMockData() {
             originalPrice: 179.99,
             rating: 4.4,
             isPrime: true,
-            image: "../amazon-clone/images/products/product5.jpg",
+            image: "../price-comparison/images/products/product5.jpg",
             specs: {
                 type: "In-ear",
                 connectivity: "Bluetooth 5.2",
@@ -129,7 +129,7 @@ function getMockData() {
             originalPrice: 899.99,
             rating: 4.6,
             fAssured: true,
-            image: "../flipkart-clone/images/products/product1.jpg",
+            image: "../price-comparison/images/products/product1.jpg",
             specs: {
                 display: "6.5-inch AMOLED",
                 processor: "Octa-core 2.5GHz",
@@ -147,7 +147,7 @@ function getMockData() {
             originalPrice: 1499.99,
             rating: 4.8,
             fAssured: true,
-            image: "../flipkart-clone/images/products/product2.jpg",
+            image: "../price-comparison/images/products/product2.jpg",
             specs: {
                 display: "15.6-inch FHD IPS",
                 processor: "Intel Core i7-11th Gen",
@@ -165,7 +165,7 @@ function getMockData() {
             originalPrice: 249.99,
             rating: 4.4,
             fAssured: true,
-            image: "../flipkart-clone/images/products/product3.jpg",
+            image: "../price-comparison/images/products/product3.jpg",
             specs: {
                 type: "Over-ear",
                 connectivity: "Bluetooth 5.0",
@@ -183,7 +183,7 @@ function getMockData() {
             originalPrice: 349.99,
             rating: 4.5,
             fAssured: false,
-            image: "../flipkart-clone/images/products/product4.jpg",
+            image: "../price-comparison/images/products/product4.jpg",
             specs: {
                 display: "1.4-inch AMOLED",
                 battery: "14 days",
@@ -201,7 +201,7 @@ function getMockData() {
             originalPrice: 179.99,
             rating: 4.3,
             fAssured: true,
-            image: "../flipkart-clone/images/products/product5.jpg",
+            image: "../price-comparison/images/products/product5.jpg",
             specs: {
                 type: "In-ear",
                 connectivity: "Bluetooth 5.2",
