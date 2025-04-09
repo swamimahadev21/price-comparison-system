@@ -1,53 +1,58 @@
-<!-- price-comparison/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Comparison</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Price Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Price<span>Compare</span></h1>
-        </div>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search for products...">
-            <button id="search-btn"><i class="fas fa-search"></i></button>
-        </div>
-    </header>
+<body class="bg-gradient-to-br from-purple-50 to-blue-100 min-h-screen p-6">
 
-    <main>
-        <section class="hero">
-            <h2>Compare Prices and Save Money</h2>
-            <p>Find the best deals across multiple online stores!</p>
-        </section>
+  <!-- Header -->
+  <header class="flex flex-col items-center text-center mb-10">
+    <h1 class="text-4xl font-bold text-purple-700">🔍 Smart Price Analyzer</h1>
+    <p class="text-gray-600 mt-2">Compare prices from Amazon & Flipkart and get the best deal!</p>
+  </header>
 
-        <section class="filters">
-            <div class="filter-options">
-                <label>Sort by:</label>
-                <select id="sort-by">
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="rating">Rating</option>
-                    <option value="discount">Discount %</option>
-                </select>
-            </div>
-        </section>
+  <!-- Search Bar -->
+  <div class="flex flex-col items-center w-full max-w-xl mx-auto mb-8">
+    <div class="flex w-full">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for products..."
+        class="flex-1 p-4 rounded-l-xl border-2 border-purple-300 focus:outline-none focus:border-purple-500"
+      />
+      <button id="search-btn" class="bg-purple-600 text-white px-6 rounded-r-xl hover:bg-purple-700 transition duration-300">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
 
-        <section class="comparison-container">
-            <h2>Product Comparison</h2>
-            <div id="comparison-results"></div>
-        </section>
-    </main>
+    <!-- Sort Filters -->
+    <div class="mt-4 w-full">
+      <label for="sort-by" class="block text-sm font-medium text-gray-700 mb-1">Sort by:</label>
+      <select id="sort-by" class="w-full p-3 border border-purple-300 rounded-xl focus:outline-none focus:border-purple-500">
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="rating">Rating</option>
+        <option value="discount">Discount %</option>
+      </select>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 PriceCompare. All rights reserved.</p>
-    </footer>
+  <!-- Comparison Section -->
+  <section class="w-full max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Product Comparison</h2>
+    <div id="comparison-results" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+  </section>
 
-    <script src="js/main.js"></script>
-    <script src="js/comparison.js"></script>
+  <!-- Footer -->
+  <footer class="mt-16 text-center text-gray-500">
+    <p>&copy; 2025 PriceCompare. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/comparison.js"></script>
 </body>
 </html>
